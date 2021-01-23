@@ -97,9 +97,9 @@ arch.test(vecvar.volume, lags.multi = 4)
 arch.test(vecvar.price,lags.multi = 2)
 
 # decomposição da variância ------------
-fevd.vol <- fevd(vecvar.volume, n.ahead=100)
+fevd.vol <- fevd(vecvar.volume)
 (fevd.vol$volume)
-fevd.price <- fevd(vecvar.price, n.ahead=20)
+fevd.price <- fevd(vecvar.price)
 (fevd.price$price.adjusted)
 
 # irf ----
