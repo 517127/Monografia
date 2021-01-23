@@ -1,4 +1,5 @@
-# script para immportar os dados
+# script para importar os dados
+# os dados são a última composição do ibovespa de 2020
 # pacotes -----------------
 library(BatchGetSymbols)
 library(gtrendsR)

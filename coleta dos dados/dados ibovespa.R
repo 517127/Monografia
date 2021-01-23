@@ -21,4 +21,3 @@ ibov <- BatchGetSymbols(tickers = "^BVSP",
                         freq.data = frq,
                         do.cache = FALSE)
 saveRDS(ibov$df.tickers, file = "dados_teste.RDS")
-rio::export(ibov$df.tickers, file = "dados_teste.csv")

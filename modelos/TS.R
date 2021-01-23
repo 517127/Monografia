@@ -192,5 +192,3 @@ estrategia <- c("Buy and Hold","Algoritmo Simles",
 media <- c(mean(ret_ibov), mean(ret.var),mean(ret.var_cv))
 data.frame(estrategia, retornos, desvios_p, media)
 
-
-
