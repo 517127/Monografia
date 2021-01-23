@@ -6,7 +6,7 @@ library(forecast)
 library(vars)
 library(tsDyn)
 library(ggplot2)
-library (readr)
+library(readr)
 # importar os dados ---------------
 my.url <- "https://raw.githubusercontent.com/517127/Monografia/master/dados/dados_finais.csv"
 my.df <- read_csv(url(my.url))
@@ -127,16 +127,16 @@ fit.var.price <- fitted(vecvar.price)
 price.prev <- fit.var.price[,1]
 ret.real <- my.df$ret.adjusted.prices[4:209]
 # DADOS DE TESTE--------------------------------
+my.url <- "https://raw.githubusercontent.com/517127/Monografia/master/dados/dados_teste.csv"
+my.df.2 <- read_csv(url(my.url))
+n_linhas <- nrow(my.df.2)-1
 exo1 <- data.frame(rep(1,n_linhas))
 names(exo1) <- "exo1"
 pred.var <- predict(vecvar.price, 
                     dumvar =  exo1,
                     n.ahead = n_linhas)
 prev.ibov_t <- pred.var$fcst$price.adjusted[,1]
-my.url <- "https://raw.githubusercontent.com/517127/Monografia/master/dados/dados_teste.csv"
-my.df <- read_csv(url(my.url))
-
-real.ret_2 <- ibov$df.tickers$ret.adjusted.prices[2:38]
+real.ret_2 <- my.df.2$ret.adjusted.prices[2:38]
 prev_pred <- c(price.prev,prev.ibov_t)
 ret_ibov <- c(ret.real, real.ret_2)
 #algoritmo comprado ----

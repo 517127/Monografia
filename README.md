@@ -5,5 +5,5 @@
 
  Assim, são vou deixar aqui dois scripts referentes a importação e ajuste dos dados referentes ao google trends e Ibovespa. Mais dois scripts são adicionados, um contendo a análise de componentes principais com os dados do google trends e outro que usa os scores da análise de componentes na metodologia VEC-VAR e o algoritmo de trading. Todos os testes apresentados no texto estão disponíveis no script
 
- O arquivo dados brutos contempla os dados dos tickers das empresas que compõem o ibovespa, o arquivo dados finais contém os scores do componente elaborado,  volume de negociações e valor do Ibovespa.
+ O arquivo dados brutos contempla os dados dos tickers das empresas que compõem o ibovespa, o arquivo dados finais contém os scores do componente elaborado,  volume de negociações e valor do Ibovespa. O arquivo dados teste são os últimos que adicionei, são só os dados do Ibovespa, mas ficaram separados apenas
     
