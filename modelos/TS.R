@@ -104,6 +104,10 @@ fevd.price <- fevd(vecvar.price)
 
 # irf ----
 
+
+
+
+
 impulse_PC1 <- irf(vecvar.volume, 
                    impulse = "PC1", ortho = FALSE)
 impulse_volume <- irf(vecvar.volume, 
