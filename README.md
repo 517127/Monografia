@@ -9,4 +9,13 @@
 
  Todos feedbacks podem ser enviados como achar conveniente, se preferir meu e-mail geral e profissional é: mateus.mpereira@hotmail.com
  
- Ainda não há forma de referenciar, mas assim que possível vou deixar referências por ABNT e bibtex. 
+Por favor cite como:
+```
+@monography{pereira2021eficiencia,
+  author={Pereira, Mateus Machado de},  
+  title={EFICI{\^E}NCIA DE MERCADO: EVID{\^E}NCIAS A PARTIR DO GOOGLE TRENDS E ALGORITMOS DE TRADING},
+  school={UFSM (Universidade Federal de Santa Maria)}.
+  note={Monografia (Bacharel em Ciências Econômicas), Santa Maria, Brazil},
+  year={2021}
+}
+```
